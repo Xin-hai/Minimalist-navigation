@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {list-style: none}
+
+
+body {
+    background: #e8e8e8;
+    font: 16px/1.4 Arial;
+    color: #888;
+    margin: 0;
+}
+
+#app {
+    background: #fff;
+    max-width: 1200px;
+    height: 850px;
+    margin: 50px auto;
+    padding: 60px 90px;
+
+}
+
+#app h1 {
+    font-size: 40px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+
+#app h1 .iconfont {
+    font-size: 50px;
+    margin-right: 10px;
+    font-weight: 300;
+}
+.search-area {
+    text-align: center;
+}
+.search-panel {
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 60px;
+    border-bottom: 1px solid #ccc;
+
+}
+.search-panel > li {
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.search-panel > li.active {
+    border-bottom: 1px solid #000;
+}
+
+.search-input-area {
+    margin-top: 40px ;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    max-width: 500px;
+
+}
+
+.search-input-area input {
+    flex: 1;
+    height: 48px;
+    line-height: 48px;
+    background: #f2f2f2;
+    font-size: 16px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.btn {
+    background: #222222;
+    width: 126px;
+    height: 48px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+

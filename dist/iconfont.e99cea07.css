@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4147072 */
+  src: url('iconfont.d0760b81.woff2?t=1688213391224') format('woff2'),
+       url('iconfont.d00f7712.woff?t=1688213391224') format('woff'),
+       url('iconfont.bee5b402.ttf?t=1688213391224') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-book:before {
+  content: "\e84a";
+}
+

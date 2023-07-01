@@ -1,0 +1,16 @@
+{
+  "id": "4147072",
+  "name": "learn",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "34453163",
+      "name": "address-book",
+      "font_class": "book",
+      "unicode": "e84a",
+      "unicode_decimal": 59466
+    }
+  ]
+}
