@@ -4,6 +4,8 @@ const $$ = selector => document.querySelectorAll(selector)
 
 let currentUrl = 'https://www.baidu.com/s?wd='
 
+
+
 $$('.search-panel >li').forEach($li => {
     $li.onclick = function () {
         $$('.search-panel >li').forEach($node => $node.classList.remove('active'))
@@ -15,20 +17,21 @@ $$('.search-panel >li').forEach($li => {
 })
 
 
-
-$('.btn').onclick =  function(){
+const skip = ()=>{  
     let $link = document.createElement('a')
     $link.setAttribute('target', '_blank')
     $link.setAttribute('href',currentUrl+ $('.search-input').value)
-    $link.click()
-    // location.href = currentUrl + $('.search-input').value
+    $link.click()   
 }
 
+$('.btn').onclick = ()=>skip()
 
 
 
 document.addEventListener('keydown', function(e) {
-    if (e.key =='Enter') {
-        location.href = currentUrl + $('.search-input').value
-    }
+    if (e.key =='Enter') 
+        skip()   
 });
+
+
+// 或者当前页面跳转 location.href = currentUrl + $('.search-input').value

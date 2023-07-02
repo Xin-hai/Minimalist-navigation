@@ -125,18 +125,21 @@ $$('.search-panel >li').forEach(function ($li) {
     };
 });
 
-$('.btn').onclick = function () {
+var skip = function skip() {
     var $link = document.createElement('a');
     $link.setAttribute('target', '_blank');
     $link.setAttribute('href', currentUrl + $('.search-input').value);
     $link.click();
-    // location.href = currentUrl + $('.search-input').value
+};
+
+$('.btn').onclick = function () {
+    return skip();
 };
 
 document.addEventListener('keydown', function (e) {
-    if (e.key == 'Enter') {
-        location.href = currentUrl + $('.search-input').value;
-    }
+    if (e.key == 'Enter') skip();
 });
+
+// 或者当前页面跳转 location.href = currentUrl + $('.search-input').value
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.2f0dae1b.map
+//# sourceMappingURL=main.2558c9c1.map
